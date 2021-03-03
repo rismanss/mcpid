@@ -1,0 +1,21 @@
+@import '../../variable.scss';
+
+.layout {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.layout-full {
+  width: $full;
+}
+
+.layout-middle {
+  width: $middle;
+}
+
+@media only screen and (max-width: 768px) {
+  .layout-middle {
+    width: $full;
+    padding: 0.5rem;
+  }
+}

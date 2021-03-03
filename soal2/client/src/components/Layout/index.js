@@ -1,19 +1,21 @@
 import PropTypes from 'prop-types';
 import './style.scss';
 
-const Layout = ({children}, props) => {
+const Layout = (props) => {
+  const className = ['layout', `layout-${props.size}`].join(' ');
   return (
-    <div {...props}>
-      {children}
+    <div className={className} {...props}>
+      {props.children}
     </div>
   );
 };
 
 Layout.propTypes = {
-  full: PropTypes.string,
-  bg: PropTypes.string
+  size: PropTypes.oneOf(['full', 'middle']),
 };
 
-Layout.defaultProps = {};
+Layout.defaultProps = {
+  size: 'middle'
+};
 
 export default Layout;
