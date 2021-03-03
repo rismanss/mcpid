@@ -13,8 +13,17 @@
   width: $middle;
 }
 
+.layout-small {
+  width: $small;
+}
+
 @media only screen and (max-width: 768px) {
   .layout-middle {
+    width: $full;
+    padding: 0.5rem;
+  }
+
+  .layout-small {
     width: $full;
     padding: 0.5rem;
   }

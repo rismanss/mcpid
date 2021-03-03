@@ -11,7 +11,7 @@ const Layout = (props) => {
 };
 
 Layout.propTypes = {
-  size: PropTypes.oneOf(['full', 'middle']),
+  size: PropTypes.oneOf(['full', 'middle', 'small']),
 };
 
 Layout.defaultProps = {

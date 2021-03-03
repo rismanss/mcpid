@@ -6,4 +6,6 @@ router.get('/', transactions.listData);
 
 router.post('/', transactions.createData);
 
+router.get('/balance', transactions.getBalance);
+
 module.exports = router;

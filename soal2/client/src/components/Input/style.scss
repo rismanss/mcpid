@@ -1,0 +1,72 @@
+@import '../../variable.scss';
+
+.in-input {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border: 0;
+  border-radius: 0.3em;
+  line-height: 1;
+  outline: none;
+  box-sizing: border-box;
+  margin: 1rem;
+}
+
+.input-disabled {
+  color: gray;
+  background-color: whitesmoke;
+  cursor: not-allowed;
+}
+
+.input-primary {
+  color: $primary;
+  border: 1px solid $primary;
+}
+
+.input-primary::-webkit-input-placeholder {
+  color: $primary;
+  opacity: 0.6;
+}
+
+.input-secondary {
+  color: $secondary;
+  border: 1px solid $secondary;
+}
+
+.input-secondary::-webkit-input-placeholder {
+  color: $secondary;
+  opacity: 0.6;
+}
+
+.input-danger {
+  color: $danger;
+  border: 1px solid $danger;
+}
+
+.input-danger::-webkit-input-placeholder {
+  color: $danger;
+  opacity: 0.6;
+}
+
+.input-success {
+  color: $success;
+  border: 1px solid $success;
+}
+
+.input-success::-webkit-input-placeholder {
+  color: $success;
+  opacity: 0.6;
+}
+
+.input-small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+
+.input-medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+
+.input-large {
+  font-size: 16px;
+  padding: 12px 24px;
+}
